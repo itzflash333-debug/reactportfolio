@@ -1,0 +1,51 @@
+.about-page .page-heading h1,
+.contact-intro h1 {
+  margin: 0;
+  font-size: clamp(30px, 4vw, 40px);
+  font-weight: 500;
+}
+
+.about-content {
+  max-width: 850px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 50px;
+  margin-top: 30px;
+}
+
+.about-copy p {
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.about-copy .about-lead {
+  color: var(--text);
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.skills-block {
+  padding: 18px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.skills-block h2 {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.skills-block ul {
+  padding-left: 20px;
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+@media (max-width: 700px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
